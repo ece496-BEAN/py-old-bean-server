@@ -20,6 +20,17 @@
     venv.enable = true;
     venv.requirements = ''
       python-lsp-server
+      rope
+      pyflakes
+      mccabe
+      pycodestyle
+      pydocstyle
+      yapf
+      mypy
+      isort
+
+      django
+      djangorestframework
     '';
   };
 
