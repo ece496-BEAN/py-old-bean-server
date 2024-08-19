@@ -20,14 +20,13 @@
     venv.enable = true;
     venv.requirements = ''
       python-lsp-server
-      rope
-      pyflakes
-      mccabe
-      pycodestyle
-      pydocstyle
-      yapf
+
       mypy
-      isort
+      djangorestframework-stubs[compatible-mypy]
+
+      pydantic
+      beartype
+      ruff
 
       django
       djangorestframework
