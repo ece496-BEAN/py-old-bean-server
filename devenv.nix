@@ -19,7 +19,10 @@
     version = "3.12.4";
     venv.enable = true;
     venv.requirements = ''
+      jedi
       python-lsp-server
+      pylsp-mypy
+      pylsp-rope
 
       mypy
       djangorestframework-stubs[compatible-mypy]
@@ -30,6 +33,8 @@
 
       django
       djangorestframework
+      markdown
+      django-filter
     '';
   };
 
