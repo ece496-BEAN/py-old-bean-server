@@ -17,12 +17,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 
 """
+from beanapi import views
 from django.contrib import admin
 from django.urls import include
 from django.urls import path
 from rest_framework import routers
-
-from beanserver.beanapi import views
 
 router = routers.DefaultRouter()
 router.register(r"users", views.UserViewSet)

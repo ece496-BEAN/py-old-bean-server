@@ -26,6 +26,7 @@
 
       mypy
       djangorestframework-stubs[compatible-mypy]
+      django-stubs[compatible-mypy]
 
       pydantic
       beartype
@@ -35,6 +36,8 @@
       djangorestframework
       markdown
       django-filter
+
+      cookiecutter>=1.7.0
     '';
   };
 
